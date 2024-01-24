@@ -47,11 +47,13 @@ const router = createBrowserRouter([
 
 function Layout() {
   return (
-    <>
-      <Navbar />
-      <Outlet />
+    <div className="layout">
+      <div>
+        <Navbar />
+        <Outlet />
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

@@ -45,11 +45,10 @@ const Single = () => {
   return (
     <div className="single">
       <div className="content">
-        <img src={`../upload/${post.img}`} alt="" />
+        <h1>{post.title}</h1>
         <div className="user">
-          <img src={post.userImg} alt="" />
           <div className="info">
-            <span>{post.username}</span>
+            <span>Written by {post.username}</span>
             <p>Posted {moment(post.date).fromNow()}</p>
           </div>
           {currentUser?.username === post.username && <div className="edit">
@@ -59,8 +58,7 @@ const Single = () => {
             <img onClick={handleDelete} src={Delete} alt="" />
           </div>}
         </div>
-        <h1>{post.title}</h1>
-        {getText(post.desc)}
+        <div dangerouslySetInnerHTML={{ __html: post.desc }} />
       </div>
       <Menu cat={post.cat}/>
     </div>
