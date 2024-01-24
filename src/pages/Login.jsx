@@ -27,13 +27,13 @@ const Login = () => {
 
   return (
     <div className='auth'>
-      <h1>Log in</h1>
       <form>
+        <h1>Log in</h1>
         <input required type="email"  placeholder='email' name='email' onChange={handleChange}/>
         <input required type="password" placeholder='password' name='password' onChange={handleChange}/>
         <button onClick={handleLogin}>login</button>
         {err && <p>{err}</p>}
-        <span>Not Registered? <Link to="/Register">Register</Link></span>
+        <span>Not Registered? <Link to="/Register"><span className='formLink'>Register</span></Link></span>
       </form>
     </div>
   )

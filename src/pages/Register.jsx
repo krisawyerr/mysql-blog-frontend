@@ -24,14 +24,14 @@ const Register = () => {
 
   return (
     <div className='auth'>
-      <h1>Register</h1>
       <form>
+      <h1>Register</h1>
         <input required type="text"  placeholder='username' name='username' onChange={handleChange}/>
         <input required type="email"  placeholder='email' name='email' onChange={handleChange}/>
         <input required type="password" placeholder='password' name='password' onChange={handleChange}/>
         <button onClick={handleRegister}>Register</button>
         {err && <p>{err}</p>}
-        <span>Already Registered? <Link to="/Login">Login</Link></span>
+        <span>Already Registered? <Link to="/Login"><span className='formLink'>Login</span></Link></span>
       </form>
     </div>
   )

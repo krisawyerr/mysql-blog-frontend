@@ -31,12 +31,12 @@ $lightGreen: #b9e7e7;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      color: white;
       height: 100vh;
-      background-color: $lightGreen;
 
       h1 {
         font-size: 20px;
-        color: teal;
+        color: rgb(255, 255, 255);
         margin-bottom: 20px;
       }
 
@@ -44,7 +44,7 @@ $lightGreen: #b9e7e7;
         display: flex;
         flex-direction: column;
         padding: 50px;
-        background-color: white;
+        background-color: #946931;
         width: 200px;
         gap: 20px;
 
@@ -57,7 +57,7 @@ $lightGreen: #b9e7e7;
         button {
           padding: 10px;
           border: none;
-          background-color: teal;
+          background-color: #C6AB67;
           cursor: pointer;
           color: white;
         }
@@ -71,6 +71,10 @@ $lightGreen: #b9e7e7;
         span {
           font-size: 12px;
           text-align: center;
+        }
+
+        .formLink {
+          color: #F7EC9C;
         }
       }
     }
